@@ -1,0 +1,89 @@
+# ===========================
+# COMPILED OUTPUT
+# ===========================
+target/
+build/
+out/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+
+# ===========================
+# SENSITIVE CONFIG (CRITICAL)
+# ===========================
+.env
+.env.*
+application-local.properties
+application-local.yml
+application-prod.properties
+application-prod.yml
+*.p12
+*.jks
+*.keystore
+*.truststore
+secrets/
+
+# ===========================
+# IDE FILES
+# ===========================
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse / STS
+.classpath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# VS Code
+.vscode/
+
+# NetBeans
+nbproject/
+nb-configuration.xml
+
+# ===========================
+# OS JUNK
+# ===========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===========================
+# LOGS & TEMP FILES
+# ===========================
+*.log
+logs/
+spring.log
+*.tmp
+*.temp
+*.pid
+
+# ===========================
+# MAVEN / GRADLE WRAPPERS
+# ===========================
+!mvnw
+!mvnw.cmd
+!gradlew
+!gradlew.bat
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# ===========================
+# DOCKER
+# ===========================
+docker-compose.override.yml
+
+# ===========================
+# TEST REPORTS & COVERAGE
+# ===========================
+/test-results/
+/coverage/
+*.exec
+jacoco.exec
