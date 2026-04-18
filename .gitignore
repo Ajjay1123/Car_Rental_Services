@@ -91,6 +91,8 @@ uploads/
 # DOCKER
 # ===========================
 docker-compose.override.yml
+# Docker
+.dockerignore
 
 # ===========================
 # TEST REPORTS & COVERAGE
