@@ -30,6 +30,7 @@ secrets/
 
 # Allow example template — MUST come after .env rules
 !.env.example
+!application-example.properties
 
 # ===========================
 # IDE FILES (Eclipse / STS)
