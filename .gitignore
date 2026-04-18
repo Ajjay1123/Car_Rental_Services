@@ -14,32 +14,38 @@ out/
 # SENSITIVE CONFIG (CRITICAL)
 # ===========================
 .env
-.env.*
+.env.local
+.env.production
+.env.development
 application-local.properties
 application-local.yml
 application-prod.properties
 application-prod.yml
+src/main/resources/application.properties
 *.p12
 *.jks
 *.keystore
 *.truststore
 secrets/
 
-# ===========================
-# IDE FILES
-# ===========================
-# IntelliJ IDEA
-.idea/
-*.iml
-*.iws
-*.ipr
+# Allow example template — MUST come after .env rules
+!.env.example
 
-# Eclipse / STS
+# ===========================
+# IDE FILES (Eclipse / STS)
+# ===========================
+.metadata/
 .classpath
 .project
 .settings/
 .springBeans
 .sts4-cache/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
 
 # VS Code
 .vscode/
@@ -64,6 +70,11 @@ spring.log
 *.tmp
 *.temp
 *.pid
+
+# ===========================
+# UPLOADS FOLDER
+# ===========================
+uploads/
 
 # ===========================
 # MAVEN / GRADLE WRAPPERS
